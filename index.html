@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Jonathon Skeen, Computer Science student at Ohio University. Projects, coursework, and ways to connect.">
+  <title>Jonathon Skeen | CS @ Ohio University</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-texture" aria-hidden="true"></div>
+  <header class="site-nav">
+    <div class="brand">
+      <span class="brand-mark">JS</span>
+      <div class="brand-text">
+        <strong>Jonathon Skeen</strong>
+        <small>CS @ Ohio University</small>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="ghost-button" id="resume-link" href="#" target="_blank" rel="noopener">Resume</a>
+      <a class="solid-button" href="#contact">Let's talk</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="panel hero" id="hero">
+      <p class="eyebrow">Ohio University · Computer Science Sophomore</p>
+      <h1>Building thoughtful software and learning the layers beneath it.</h1>
+      <p class="lede">I'm Jonathon Skeen, a CS major who enjoys turning ideas into polished systems. I like working across the stack — from algorithms and data structures to interfaces that feel intentional.</p>
+      <div class="hero-actions">
+        <a class="solid-button" href="#projects">View projects</a>
+        <a class="ghost-button" href="#contact">Contact</a>
+      </div>
+      <div class="at-a-glance">
+        <div>
+          <span class="label">Year</span>
+          <strong>Sophomore</strong>
+        </div>
+        <div>
+          <span class="label">Interests</span>
+          <strong>Systems, AI/ML, Web</strong>
+        </div>
+        <div>
+          <span class="label">Location</span>
+          <strong>Athens, OH</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel about" id="about">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Focused on craft, clarity, and curious questions.</h2>
+        </div>
+        <p class="muted">I'm pairing classroom fundamentals with hands-on projects to stay in the habit of shipping. I care about readable code, thoughtful UX, and systems that are fast, resilient, and easy to debug.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Academic track</h3>
+          <p>Computer Science B.S. · Ohio University · Sophomore. Building a strong base in algorithms, systems programming, databases, and software design.</p>
+          <ul>
+            <li>Data Structures and Algorithms</li>
+            <li>Systems Programming & Computer Architecture</li>
+            <li>Discrete Structures & Linear Algebra</li>
+          </ul>
+        </div>
+        <div class="about-card">
+          <h3>Working style</h3>
+          <p>Prototype quickly, then iterate with tests, profiling, and polish. I like pairing, peer reviews, and writing short docs so decisions stick.</p>
+          <ul>
+            <li>TypeScript, Python, C/C++</li>
+            <li>React, Node.js, Express</li>
+            <li>PostgreSQL, SQLite, REST APIs</li>
+          </ul>
+        </div>
+        <div class="about-card">
+          <h3>Currently exploring</h3>
+          <p>Sharper full-stack patterns, better data visualizations, and ML-assisted tooling that keeps humans in the loop.</p>
+          <ul>
+            <li>Interactive code visualizers</li>
+            <li>Performance-aware UI design</li>
+            <li>Model-assisted study tools</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel projects" id="projects">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Projects</p>
+          <h2>Featured builds and GitHub snapshots.</h2>
+        </div>
+        <p class="muted">A mix of personal experiments and school projects. Tabs highlight featured work, live GitHub data, and coursework milestones.</p>
+      </div>
+      <div class="tab-bar" role="tablist" aria-label="Project views">
+        <button class="tab active" data-tab-target="featured" role="tab" aria-selected="true">Featured</button>
+        <button class="tab" data-tab-target="github" role="tab" aria-selected="false">GitHub feed</button>
+        <button class="tab" data-tab-target="coursework" role="tab" aria-selected="false">Coursework</button>
+      </div>
+      <div class="tab-content active" id="tab-featured" role="tabpanel">
+        <div class="project-grid" id="featured-projects"></div>
+      </div>
+      <div class="tab-content" id="tab-github" role="tabpanel">
+        <div class="github-summary" id="github-summary"></div>
+        <div class="project-grid" id="github-projects"></div>
+      </div>
+      <div class="tab-content" id="tab-coursework" role="tabpanel">
+        <div class="coursework-grid" id="coursework-list"></div>
+      </div>
+    </section>
+
+    <section class="panel timeline" id="timeline">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Timeline</p>
+          <h2>How I'm leveling up.</h2>
+        </div>
+        <p class="muted">Snapshots from classes, clubs, and the projects that pushed me to learn something new.</p>
+      </div>
+      <div class="timeline-grid" id="timeline-items"></div>
+    </section>
+
+    <section class="panel skills" id="skills">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Skills</p>
+          <h2>Tools I reach for right now.</h2>
+        </div>
+        <p class="muted">Comfortable pairing CS fundamentals with modern dev tools. Always happy to learn a new stack when it fits the problem.</p>
+      </div>
+      <div class="skills-grid" id="skills-grid"></div>
+    </section>
+
+    <section class="panel contact" id="contact">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow">Let's collaborate</p>
+          <h2>Ready for internships, research groups, and new project ideas.</h2>
+          <p class="muted">Send a note about roles, pair-programming sessions, or projects that need someone who can learn quickly and ship thoughtfully.</p>
+          <div class="contact-actions">
+            <a class="solid-button" id="email-link" href="#">Email me</a>
+            <a class="ghost-button" id="github-link" href="#" target="_blank" rel="noopener">GitHub</a>
+            <a class="ghost-button" id="linkedin-link" href="#" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+        <div class="callout">
+          <p class="label">Next steps</p>
+          <ul id="next-steps"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built by Jonathon Skeen · CS @ Ohio University</p>
+    <a href="#hero">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
